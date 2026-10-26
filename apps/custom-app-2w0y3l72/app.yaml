@@ -1,0 +1,87 @@
+schema_version: 1
+title: "Beta"
+description: "SPACE Studio prototype (v0.5) with the Structured Detection outputs
+  for five HDB floor plans."
+icon: sparkles
+accent_color: "#B99A81"
+
+routes:
+  - path: home
+    module: pages/home.js
+    title: "Overview"
+    hidden: true
+  - path: detection
+    module: pages/detection.js
+    title: "Structured Detection"
+    hidden: true
+  - path: prototype
+    module: pages/prototype.js
+    title: "Prototype"
+    home: true
+
+styles:
+  - styles.css
+
+# Published Structured Detection tables (static artifacts, no pipeline attached).
+data:
+  - id: walls_p1
+    label: "Plan 1 walls"
+    source: /table/walls_p1
+  - id: walls_p2
+    label: "Plan 2 walls"
+    source: /table/walls_p2
+  - id: walls_p3
+    label: "Plan 3 walls"
+    source: /table/walls_p3
+  - id: walls_p4
+    label: "Plan 4 walls"
+    source: /table/walls_p4
+  - id: walls_p5
+    label: "Plan 5 walls"
+    source: /table/walls_p5
+  - id: openings_p1
+    label: "Plan 1 openings"
+    source: /table/openings_p1
+  - id: openings_p2
+    label: "Plan 2 openings"
+    source: /table/openings_p2
+  - id: openings_p3
+    label: "Plan 3 openings"
+    source: /table/openings_p3
+  - id: openings_p4
+    label: "Plan 4 openings"
+    source: /table/openings_p4
+  - id: openings_p5
+    label: "Plan 5 openings"
+    source: /table/openings_p5
+  - id: rooms_p1
+    label: "Plan 1 rooms"
+    source: /table/rooms_p1
+  - id: rooms_p2
+    label: "Plan 2 rooms"
+    source: /table/rooms_p2
+  - id: rooms_p3
+    label: "Plan 3 rooms"
+    source: /table/rooms_p3
+  - id: rooms_p4
+    label: "Plan 4 rooms"
+    source: /table/rooms_p4
+  - id: rooms_p5
+    label: "Plan 5 rooms"
+    source: /table/rooms_p5
+  - id: fixtures_p1
+    label: "Plan 1 fixtures"
+    source: /table/fixtures_p1
+  - id: fixtures_p2
+    label: "Plan 2 fixtures"
+    source: /table/fixtures_p2
+  - id: fixtures_p3
+    label: "Plan 3 fixtures"
+    source: /table/fixtures_p3
+  - id: fixtures_p4
+    label: "Plan 4 fixtures"
+    source: /table/fixtures_p4
+  - id: fixtures_p5
+    label: "Plan 5 fixtures"
+    source: /table/fixtures_p5
+engine: "1.32.0"
